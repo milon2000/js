@@ -1,0 +1,10 @@
+function accum(s) {
+    var small = s.toLowerCase().split('');
+  for(var i = 0; i < small.length; i++) {
+  
+    small[i] = small[i].toUpperCase() + small[i].repeat(i)
+  }
+  return small.join('-')
+}
+
+accum('ZpglnRxqenU')
